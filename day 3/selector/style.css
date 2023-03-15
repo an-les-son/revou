@@ -1,0 +1,22 @@
+h2 {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+
+.mobil {
+  color: green;
+}
+
+#alya {
+  color: blueviolet;
+}
+
+/* untuk menselector class menggunakan tanda ".", contohnya class=mobil ditulis .mobil */
+/* untuk menselector id menggunakan tanda "#", contohnya id=alya ditulis #alya */
+/* css sendiri memiliki tingkatan hirarki yang berfungsi untuk mesin mendahulukan atau yang di utamakan dalam membaca style, tinggakan itu di awali dari yang tertinggi :
+1. id
+2. class
+3. tag html */
