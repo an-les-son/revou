@@ -1,0 +1,12 @@
+CSS (Cascading Style Sheets)
+aturan untuk mengatur beberapa komponen dalam sebuah sebuah web sehingga akan lebih terstruktur dan seragam
+
+CSS dapat mengontrol tata letak beberapa halaman web sekaligus.
+Stylesheet lebih baik disimpan di file CSS secara terpisah.
+
+diibarakan membuat website adalah membuat bangunan, CSS berperan untuk mengatur dan mempercantik kerangka-kerangka HTML yang sudah kita buat (mengecat, mengecor, mengatur sususan kerangka yang kita buat, dan sebagainya)
+
+untuk menambahkan CSS ke dalam HTML ada 3 cara :
+1. inline > menulis atau memberikan attribute style kedalam tag HTML
+2. internal > menulis, meletakkan style di bagian <head>
+3. eksternal > membuat file CSS dengan filetype .css secara terpisah dan memberikan link di bagian <head> untuk menghubungkan file CSS tersebut dengan file HTML
