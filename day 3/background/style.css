@@ -1,7 +1,7 @@
 .kotak1 {
   width: 200px;
   height: 200px;
-  background-color: rgba(0, 0, 255, 0.2);
+  background-color: rgb(0, 0, 255);
   display: inline-block;
 }
 
@@ -24,4 +24,11 @@
   height: 200px;
   background: radial-gradient(blue, yellow);
   display: inline-block;
+}
+
+.kotak5 {
+  width: 500px;
+  height: 400px;
+  background-image: url("https://img.sportstars.id//2023/02/l63up0/master_2i6C5map51_295_asal_mula_meme_viral_artinya_apa_bang_messi.jpg");
+  background-size: cover;
 }

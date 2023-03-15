@@ -10,3 +10,14 @@ untuk menambahkan CSS ke dalam HTML ada 3 cara :
 1. inline > menulis atau memberikan attribute style kedalam tag HTML
 2. internal > menulis, meletakkan style di bagian <head>
 3. eksternal > membuat file CSS dengan filetype .css secara terpisah dan memberikan link di bagian <head> untuk menghubungkan file CSS tersebut dengan file HTML
+
+Display
+properti tampilan CSS yang mengatr apakah suatu elemen diperlukan sebagai block atau inline element dan tata letak yang digunakan untuk turnannya, seperti, flow layout, grid atau flex.
+
+inline : menampilkan elemen sebagai elemen inline (seperti <span>). properti height dan width apa pun tidak akan berpengaruh
+
+block : menampilkan elemen sebagai elemen block (seperti <p>). itu dimulai pada baris baru, dan menempati seluruh lebar
+
+flex : menampilkan element sebagai container yang flexible
+
+grid : menampilkan element sebagai grid cotainer
