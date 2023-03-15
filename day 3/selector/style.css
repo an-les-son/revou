@@ -14,6 +14,10 @@ p {
   color: blueviolet;
 }
 
+a[target] {
+  background-color: yellow;
+}
+
 /* untuk menselector class menggunakan tanda ".", contohnya class=mobil ditulis .mobil */
 /* untuk menselector id menggunakan tanda "#", contohnya id=alya ditulis #alya */
 /* css sendiri memiliki tingkatan hirarki yang berfungsi untuk mesin mendahulukan atau yang di utamakan dalam membaca style, tinggakan itu di awali dari yang tertinggi :
