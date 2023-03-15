@@ -1,0 +1,22 @@
+body {
+  background-color: yellow;
+}
+
+h1 {
+  color: rgb(0, 0, 255);
+}
+
+h2 {
+  color: #00ff00;
+}
+
+p {
+  color: hsl(360, 100%, 75%);
+}
+
+.kotak1 {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 255, 0.2);
+  display: inline-block;
+}

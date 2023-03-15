@@ -1,0 +1,27 @@
+.kotak1 {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 255, 0.2);
+  display: inline-block;
+}
+
+.kotak2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(blue, yellow);
+  display: inline-block;
+}
+
+.kotak3 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(90deg, blue, yellow);
+  display: inline-block;
+}
+
+.kotak4 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(blue, yellow);
+  display: inline-block;
+}
