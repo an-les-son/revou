@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <!-- JavaSricpt -->
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -25,30 +27,30 @@
           <table>
             <tr>
               <td><label for="">Jenis Kelamin</label></td>
-              <td>
-                <input type="radio" />
-                <label for="">Pria</label>
-                <input type="radio" />
-                <label for="">Wanita</label>
+              <td class="jenis-kelamin">
+                <input type="radio" name="jenis-kelamin" value="l" required="true" />
+                <label for="jenis-kelamin">Pria</label>
+                <input type="radio" name="jenis-kelamin" value="w" required="true" />
+                <label for="jenis-kelamin">Wanita</label>
               </td>
             </tr>
             <tr>
               <td>Berat Badan (kg)</td>
-              <td><input type="text" /></td>
+              <td><input type="text" id="berat" required="true" /></td>
             </tr>
             <tr>
               <td><label for="">Usia (tahun)</label></td>
-              <td><input type="text" /></td>
+              <td><input type="text" id="usia" required="true" /></td>
             </tr>
             <tr>
               <td><label for="">Tinggi Badan (cm)</label></td>
-              <td><input type="text" /></td>
+              <td><input type="text" id="tinggi" required="true" /></td>
             </tr>
             <tr>
               <td></td>
               <td class="btn-form">
-                <button>Hitung BMI</button>
-                <button>Reset</button>
+                <button class="btn-biru" id="hitung">Hitung BMI</button>
+                <button id="reset">Reset</button>
               </td>
             </tr>
           </table>
@@ -71,11 +73,64 @@
         </div>
       </div>
       <div class="kotak-hasil">
-        <div class="hasil"></div>
-        <div class="hasil-hitung"></div>
-        <div class="penjelasan"></div>
-        <div class="penyakit"></div>
-        <div class="aplikasi"></div>
+        <div class="hasil">
+          <p>Hasil</p>
+        </div>
+        <div class="hasil-hitung">
+          <p id="status">Obesitas</p>
+          <p id="hasil">25.2</p>
+          <p id="keterangan-1">Anda Berada dalam kategori obesitas</p>
+          <button class="btn-biru">Download Hasil BMI</button>
+        </div>
+        <div class="penjelasan1 disable">
+          <p>Hasil BMI dibawah 18.5</p>
+          <p>Anda berada dalam kategori kekurangan berat badan.</p>
+          <p>Hubungi dokter lebih lanjut mengenai pola makan dan gizi yang baik untuk meningkatkan kesehatan.</p>
+        </div>
+        <div class="penjelasan2 disable">
+          <p>Hasil BMI diantara 18.5 dan 22.9</p>
+          <p>Anda berada dalam kategori berat badan yang normal.</p>
+          <p>Tetap pertahankan berat badan Anda dan jaga berat badan Anda dengan mengatur keseimbangan antara pola makan dan aktivitas fisik Anda.</p>
+        </div>
+        <div class="penjelasan3 disable">
+          <p>Hasil BMI diantara 23 dan 25</p>
+          <p>Anda berada dalam kategori overweight atau berat badan berlebih.</p>
+          <p>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalor makanan yang dikonsumsi dan berolahraga.</p>
+          <p>Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
+        </div>
+        <div class="penjelasan4">
+          <p>Hasil BMI diatas 25</p>
+          <p>Anda berada dalam kategori obesitas.</p>
+          <p>Usahakan untuk menurunkan berat badan dan menerapkan pola hidup sehat dengan menjaga makan dan aktivitas fisik.</p>
+          <p>Segera kunjungi dokter untuk dilakukan pemeriksaan kesehatan lanjutan untuk mengetahui risiko yang Anda miliki terkait berat badan Anda.</p>
+        </div>
+        <div class="kosultasi">
+          <button class="btn-biru">Konsultasi Ahli Gizi Via Aplikasi</button>
+          <button class="btn-biru">Registrasi Online Ahli Gizi</button>
+          <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+        </div>
+        <div class="penyakit1">
+          <p>Berat rendah dapat menyebabkan berbagai masalah penyakit</p>
+          <ol>
+            <li>Infertilitas</li>
+            <li>Anemia</li>
+            <li>Osteoporosis</li>
+            <li>Sistem Imun Lemah</li>
+          </ol>
+        </div>
+        <div class="penyakit2 disable">
+          <p>Beberapa penyakit yang berasal dari kegemukan</p>
+          <ol>
+            <li>Diabetes</li>
+            <li>Hipertensi</li>
+            <li>Sakit Jantung</li>
+            <li>Osteoarthritis</li>
+          </ol>
+        </div>
+        <div class="btn-bawah">
+          <button class="btn-biru">Konsultasi Dokter Via Aplikasi</button>
+          <button class="btn-biru">Registrasi Online Sekarang</button>
+        </div>
       </div>
     </div>
   </body>
