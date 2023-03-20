@@ -94,3 +94,28 @@ while (ulangi) {
   ulangi = confirm("Apakah anda mau mengulangi ?");
 }
 document.write("Perulangan sudah telah dilakukan sebanyak" + counter);
+
+// JavaScript: Function
+// Fungsi adalah sub-program yang bisa digunakan kembali baik di dalam proram itu sendiri, maupun di program yang lain. Ada beberapa cara yang bisa kita lakukan untuk membuat fungsi di JavaScript:
+// - menggunakan cara biasa
+// - menggunakan ekspresi
+// - menggunakan tanda panah (=>)
+
+// fungsi cara biasa
+function caraBiasa() {
+  console.log("hello world!");
+}
+
+// fungsi dengan ekspresi
+var caraExpresi = function () {
+  console.log("hello world!");
+};
+
+// fungsi dengan tanda panah
+var caraTandaPanah = () => {
+  console.log("hello world!");
+};
+
+caraBiasa();
+caraExpresi();
+caraTandaPanah();
