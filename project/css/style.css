@@ -63,6 +63,7 @@ body {
   margin: 20px auto;
   font-size: 0.9em;
   font-weight: bold;
+  text-align: center;
 }
 
 .form .btn-form button {
@@ -80,6 +81,8 @@ body {
 .form .jenis-kelamin {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
 }
 
 .form .jenis-kelamin label {
@@ -106,7 +109,6 @@ body {
 .form table tr td input {
   border: 0;
   border-radius: 5px;
-  /* width: 150px; */
 }
 
 /* halaman hasil */

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+      }
+      #check {
+        background-color: black;
+        padding: 3px;
+        color: white;
+        border: 0;
+        border-radius: 3px;
+        margin-top: 5px;
+        text-transform: uppercase;
+      }
+      .buah {
+        width: 50%;
+        margin: 50px auto;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hasil {
+        width: 150px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 3px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="buah">
+      <div class="radio">
+        <input type="radio" name="buah" value="apel" checked />apel<br />
+        <input type="radio" name="buah" value="mangga" />mangga<br />
+        <input type="radio" name="buah" value="melon" />melon<br />
+        <button id="check">Pilihan</button>
+      </div>
+      <div class="hasil">
+        <p id="buah-favorit">saya suka buah:</p>
+      </div>
+    </div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
