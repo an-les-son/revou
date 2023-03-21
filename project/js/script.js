@@ -29,7 +29,7 @@ function hitungBMI() {
     s1.classList.remove("disable");
   } else if (a > 18.5 && a <= 24.9) {
     s.innerHTML = "Normal";
-    k1.innerHTML = "Anda memiliki berat badan ideal.<br>Good job!!";
+    k1.innerHTML = "Anda memiliki berat badan ideal<br>Good job!!";
     bmi.innerHTML = a;
     p2.classList.remove("disable");
   } else if (a >= 25 && a <= 29.9) {
@@ -58,6 +58,18 @@ function display() {
   document.getElementById("p-bawah").classList.add("p-hasil");
 }
 
+function getRadio() {
+  var radio = document.getElementsByName("jenis-kelamin");
+  var i;
+  for (i = 0; i <= radio.length; i++) {
+    if (radio[i].checked) {
+      document.getElementById("radio-output").innerHTML =
+        "BMI :<br>" + radio[i].value + " Usia " + document.getElementById("usia").value + " Thn" + "<br>Berat " + document.getElementById("berat").value + " Kg" + "<br>Tinggi " + document.getElementById("tinggi").value + " Cm";
+    }
+  }
+}
+
 button.addEventListener("click", hitungBMI);
 button.addEventListener("click", display);
+button.addEventListener("click", getRadio);
 btnReset.addEventListener("click", getReset);

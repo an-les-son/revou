@@ -37,10 +37,20 @@ table img {
 }
 
 .header p:first-child,
-.kotak-hasil .hasil p {
+.kotak-hasil .hasil p:first-child {
   font-size: 2em;
   font-weight: bold;
   color: rgb(0, 162, 255);
+}
+
+.kotak-hasil .hasil p:last-child {
+  font-size: 0.7em;
+  width: 100px;
+  padding: 5px;
+  background-color: rgb(0, 162, 255);
+  color: white;
+  margin-top: 2px;
+  border-radius: 5px;
 }
 
 .header p:last-child,
@@ -191,6 +201,23 @@ input {
   justify-content: center;
 }
 
+.kotak-hasil .download {
+  margin-top: 250px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.kotak-hasil .download-apps img {
+  margin: 10px 3px;
+  width: 30%;
+  cursor: pointer;
+}
+
+.kotak-hasil .download .footer-name {
+  font-size: 0.6em;
+  padding-bottom: 200px;
+}
+
 .disable {
   display: none;
 }
@@ -198,6 +225,7 @@ input {
 /* layering */
 
 .p-hasil {
+  width: 50%;
   position: absolute;
   top: 20px;
   transform: translate(1);
