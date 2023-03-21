@@ -9,15 +9,30 @@ body {
 }
 
 .container {
-  width: 500px;
+  width: 50%;
+  height: 700px;
   /* border: 1px solid black; */
   margin: 20px auto;
+  overflow: hidden;
+}
+
+table img {
+  width: 5%;
+}
+
+.td-label {
+  width: 40%;
+  text-align: left;
+}
+
+.width-80 {
+  width: 80%;
 }
 
 /* kotak hitung */
 .kotak-hitung {
   width: 100%;
-  height: 800px;
+  height: 700px;
   /* border: 1px solid black; */
 }
 
@@ -49,15 +64,20 @@ body {
   margin-top: 10px;
 }
 
-.footer .meter {
-  font-size: 0.3em;
+.footer sup {
+  font-size: 0.5em;
+}
+
+input {
+  font-size: 0.8em;
+  padding: 3px;
 }
 
 /* form hitung */
 
 .kotak-hitung .form {
-  width: 60%;
-  padding: 20px 15px 40px 20px;
+  width: 50%;
+  padding: 20px 0 40px 40px;
   background-color: rgb(202, 234, 253);
   border-radius: 10px;
   margin: 20px auto;
@@ -113,14 +133,20 @@ body {
 
 /* halaman hasil */
 .kotak-hasil {
-  width: 500px;
+  width: 50%;
   height: 800px;
-  /* border: 1px solid black; */
   background-color: white;
-  /* position: absolute;
-  top: 20px; */
   opacity: 1;
   z-index: 2;
+}
+
+#keterangan-1 {
+  line-height: 1.2em;
+  margin-top: 10px;
+}
+
+.kotak-hasil .penjelasan {
+  margin-top: 10px;
 }
 
 .kotak-hasil .hasil-hitung,
@@ -141,16 +167,11 @@ body {
   font-weight: bold;
 }
 
-.kotak-hasil .penjelasan,
 .kotak-hasil .kosultasi {
   text-align: justify;
   line-height: 1.5em;
   margin: 20px 0;
   position: relative;
-}
-
-.kotak-hasil .penjelasan p:first-child {
-  margin-bottom: 10px;
 }
 
 .kosultasi button {
@@ -172,4 +193,22 @@ body {
 
 .disable {
   display: none;
+}
+
+/* layering */
+
+.p-hasil {
+  position: absolute;
+  top: 20px;
+  transform: translate(1);
+  transition: all 3s;
+  z-index: 2;
+}
+
+.p-hilang {
+  transform: translate(0);
+  transition: all 1s;
+  z-index: 1;
+  position: relative;
+  opacity: 0;
 }
