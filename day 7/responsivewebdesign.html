@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive web design</title>
+    <style>
+      /* media query adalah sebuah fungsi yang disediakan oleh CSS terutama modul di CSS3, untuk membantu kita membuat tampilan yang responsive untuk pengguna aplikasi / website kita */
+
+      /* extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        .container {
+          width: 500px;
+          height: 500px;
+          margin: auto;
+          background-color: aqua;
+        }
+      }
+      /* small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {
+        .container {
+          width: 600px;
+          height: 600px;
+          margin: auto;
+          background-color: bisque;
+        }
+      }
+      /* medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+        .container {
+          width: 700px;
+          height: 700px;
+          margin: auto;
+          background-color: coral;
+        }
+      }
+      /* large devices (laptop desktops, 992px and up) */
+      @media only screen and (max-width: 992px) {
+        .container {
+          width: 800px;
+          height: 800px;
+          margin: auto;
+          background-color: crimson;
+        }
+      }
+      /* extra large devices (large laptop desktops, 1200px and up) */
+      @media only screen and (max-width: 1200px) {
+        .container {
+          width: 900px;
+          height: 900px;
+          margin: auto;
+          background-color: gold;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <!-- responsive web design adalah sebuah metode dimana kita membuat sebuah tampilan website yang kita buat, yang dapat menyesuaikan dengan besar layar perangkat pengguna, dan masih lah terlihat baik dan nyaman digunakan
+    contoh :
+    - pc desktop memiliki layar 1024+ px
+    - tablet memiliki layar 1023-768 px
+    - smartphone memiliki layar 767-320 px-->
+  </body>
+</html>
